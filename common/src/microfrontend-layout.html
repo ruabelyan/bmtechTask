@@ -1,0 +1,19 @@
+<single-spa-router>
+  <!-- <route path="settings">
+    <application name="@org/settings"></application>
+  </route> -->
+  <route default>
+    <application name="@section/login"></application>
+  </route>
+  <main>
+    <application name="@section/navbarMFE"></application>
+    <application name="@section/sidebar"></application>
+    <route path="/main">
+      <application name="@section/main"></application>
+    </route>
+    <route path="/main2">
+      <application name="@section/main2"></application>
+    </route>
+    <application name="@section/footerMFE"></application>
+  </main>
+</single-spa-router>
